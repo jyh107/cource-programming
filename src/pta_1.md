@@ -65,7 +65,7 @@ int main() {
 
 ### 7-5 有一门课不及格的学生
 
-当低于 \\(60\\) 时 `flag + 1`，只需判断 `flag` 是否恰为 \\(1\\) 。
+当低于 $60$ 时 `flag + 1`，只需判断 `flag` 是否恰为 \\(1\\) 。
 
 ```c
 int main() {
@@ -428,7 +428,7 @@ int main() {
 
 题目描述有误，读入需要加冒号，即 `scanf("%d:%d", &h, &m)` 。
 
-注意细节，$12\\) 点的情况需要详细考虑。
+注意细节，\\(12\\) 点的情况需要详细考虑。
 
 ```c
 int main() {
@@ -478,7 +478,7 @@ int main() {
 
 于是我们可以令 \\(f_i\\) 为超出价格，有
 
-\\[f_i = \begin{cases} p-x_i&,p>x_i\\0&,p \leqslant x_i \end{cases}\\]
+\\[f_i = \begin{cases} p-x_i&,p>x_i \\\\ 0&,p \leqslant x_i \end{cases}\\]
 
 那么总付费可以表示为 \\(\sum k_if_i\\)。
 
@@ -838,11 +838,11 @@ int read() {
 
 将 \\(d\\) 与 \\(|r_1+r_2|\\) 和 \\(|r_1-r_2|\\) 比较，分类讨论如下
 
-- 当 \\(|r_1+r_2| < d$，两圆尚未接触，为外离 Separated。
-- 当 \\(d = |r_1+r_2|$，两圆外切 Circumscribed。
-- 当 \\(|r_1-r_2| < d < |r_1+r_2|$，两圆相交 Intersected。
-- 当 \\(d = |r_1-r_2|$，两圆内切 Inscribed。
-- 当 \\(0 \leqslant d < |r_1-r_2|$，两圆内含 Contained。
+- 当 \\(|r_1+r_2| < d\\)，两圆尚未接触，为外离 Separated。
+- 当 \\(d = |r_1+r_2|\\)，两圆外切 Circumscribed。
+- 当 \\(|r_1-r_2| < d < |r_1+r_2|\\)，两圆相交 Intersected。
+- 当 \\(d = |r_1-r_2|\\)，两圆内切 Inscribed。
+- 当 \\(0 \leqslant d < |r_1-r_2|\\)，两圆内含 Contained。
 
 至于重合，开始特判掉即可。
 
