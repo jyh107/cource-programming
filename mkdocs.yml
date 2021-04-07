@@ -39,7 +39,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.details
-  - pymdownx.tasklist
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - footnotes
   - def_list
   - pymdownx.tabbed
@@ -80,11 +81,14 @@ nav:
   - PTA:
     - PTA题解/index.md
     - 基础 EASY:
-      - PTA 选择结构: PTA题解/PTA选择结构easy.md
-      - PTA 循环结构: PTA题解/PTA循环结构easy.md
+      - PTA 选择结构: PTA题解/PTA选择结构E.md
+      - PTA 循环结构: PTA题解/PTA循环结构E.md
     - 深入 HARD:
-      - PTA 选择结构: PTA题解/PTA选择结构easy.md
-      - PTA 循环结构: PTA题解/PTA循环结构hard.md
+      - PTA 选择结构: PTA题解/PTA选择结构E.md
+      - PTA 循环结构: PTA题解/PTA循环结构H.md
+  - 其它:
+    - Markdown: 其它/Markdown.md
+    - MkDocs: 其它/MkDocs.md
   - 关于:
     - 简介: index.md
     - 如何参与: 关于/如何参与.md
