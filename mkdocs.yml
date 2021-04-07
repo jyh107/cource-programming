@@ -1,0 +1,86 @@
+site_name: ZAFU 程序设计 2020
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.instant
+#    - navigation.sections
+    - navigation.expand
+    - navigation.top
+  palette:
+    scheme: default
+    primary: white
+    accent: red
+  favicon: favicon.ico
+  icon:
+    logo: material/school
+  include_search_page: false
+  search_index_only: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.tasklist
+  - footnotes
+  - def_list
+  - pymdownx.tabbed
+  - toc:
+      permalink: ⚓︎
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+
+copyright: Copyright 2020 - 2021 Roger Young
+repo_url: https://github.com/RogerYoungh/cource-programming
+repo_name: rogeryoungh/cource-programming
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RogerYoungh
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:rogeryoungh@foxmail.com
+
+
+extra_javascript:
+  - javascripts/config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 课程:
+    - 循环: 课程/循环.md
+  - PTA:
+    - PTA题解/index.md
+    - 基础 EASY:
+      - PTA 选择结构: PTA题解/PTA选择结构easy.md
+      - PTA 循环结构: PTA题解/PTA循环结构easy.md
+    - 深入 HARD:
+      - PTA 选择结构: PTA题解/PTA选择结构easy.md
+      - PTA 循环结构: PTA题解/PTA循环结构hard.md
+  - 关于:
+    - 简介: index.md
+    - 如何参与: 关于/如何参与.md
