@@ -43,6 +43,7 @@ markdown_extensions:
       custom_checkbox: true
   - footnotes
   - def_list
+  - attr_list
   - pymdownx.tabbed
   - toc:
       permalink: ⚓︎
@@ -84,7 +85,7 @@ nav:
       - PTA 选择结构: PTA题解/PTA选择结构E.md
       - PTA 循环结构: PTA题解/PTA循环结构E.md
     - 深入 HARD:
-      - PTA 选择结构: PTA题解/PTA选择结构E.md
+      - PTA 选择结构: PTA题解/PTA选择结构H.md
       - PTA 循环结构: PTA题解/PTA循环结构H.md
   - 其它:
     - Markdown: 其它/Markdown.md

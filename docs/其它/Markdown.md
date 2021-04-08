@@ -1,10 +1,12 @@
 # Markdown 介绍
 
-我推荐 Markdown 的原因就是它足够流行，足够简单。
+我推荐 Markdown，因为它足够流行，足够简单。
 
-本文讲介绍一些 Markdown 的基础文法，MkDocs 所独有的请阅读。
+本文讲介绍一些 Markdown 的基础文法，MkDocs 独有的特性请阅读 [MkDocs](MkDocs.md)。
 
-## Markdown 的适用于
+更详细的请阅读 [Cyent](https://cyent.github.io/markdown-with-mkdocs-material/syntax/main/)。
+
+## Markdown 适合
 
 Markdown 是 HTML 的简单替代，是一个纯文本文件。它适合于撰写网络文章，通常这些文章只需要很少的格式。
 
@@ -12,9 +14,9 @@ Markdown 不适合做复杂的排版工作，它不能精确的控制文本的�
 
 ## 编辑器
 
-支持 Markdown 的编辑器很多。我推荐 [VSCode](https://code.visualstudio.com/) 或 [Typora](https://typora.io/)，前者是一个通用而强大的编辑器，后者是一个所见即所得的 Markdown 编辑器。
+支持 Markdown 的编辑器很多。我推荐 [VSCode](https://code.visualstudio.com/)，它是一个通用而强大的编辑器，或者尝试 [Typora](https://typora.io/) ，它一个所见即所得的 Markdown 编辑器。
 
-或者你不愿意下载，你可以尝试在线的 [CMD 作业部落](https://www.zybuluo.com/mdeditor)。
+或者你不愿意下载，你可以在线尝试 [CMD 作业部落](https://www.zybuluo.com/mdeditor)。
 
 ## 标题与段落
 
@@ -34,15 +36,15 @@ Markdown 不适合做复杂的排版工作，它不能精确的控制文本的�
 普通段落，每两段之间空一行。
 
 ```md
-段落之间记得空行，
-否则不会换行的。
+其它格式有 **粗体** 和 *斜体*，
+段间记得空行，否则不会换行的。
 
-其它格式有 **粗体** 和 *斜体*，还有 <u>下划线</u> 和 <del>删除线</del>。文本 ==高亮== 。
+还有 <u>下划线</u> 和 <del>删除线</del>，和 ==高亮== 。
 ```
-段落之间记得空行，
-否则不会换行的。
+其它格式有 **粗体** 和 *斜体*，
+段间记得空行，否则不会换行的。
 
-其它格式有 **粗体** 和 *斜体*，还有 <u>下划线</u> 和 <del>删除线</del>。文本 ==高亮== 。
+还有 <u>下划线</u> 和 <del>删除线</del>，和 ==高亮== 。
 
 ## 引用
 
@@ -70,6 +72,8 @@ fn main() {
     println!("Hello World!");
 }
 ```
+
+pygments 支持 434 种语言的高亮，你可以在 [这里](https://cyent.github.io/markdown-with-mkdocs-material/appendix/pygments/) 找到它们。
 
 ## 列表
 
@@ -117,17 +121,17 @@ fn main() {
 
 ## LaTeX 公式
 
-我启用了 MathJax 扩展，因此我们可以在文章中穿插使用 LaTeX 公式。比如 $a^2+b^2=c^2$，
+很多同学应该会使用 $\rm\LaTeX$，因此我启用了 MathJax 扩展，可以在文章中穿插公式。比如 $a^2+b^2=c^2$，
 
 $$\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$$
 
-```md
+```latex
 比如 $a^2+b^2=c^2$，
 
 $$\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$$
 ```
 
-深入 LaTeX 超出了我们的讨论范围，请您自行了解。
+深入 $\rm\LaTeX$ 超出了我们的讨论范围，请您自行了解。
 
 ## 表格
 
@@ -149,13 +153,19 @@ $$\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$$
 
 ## 脚注
 
-这里脚注 [^1] 
+```md
+脚注 [^1] 会自动放到文末。 
+
+[^1]: footnote，脚注
+```
+
+脚注 [^1] 会自动放到文末。 
 
 [^1]: footnote，脚注
 
 ## 转义
 
-复杂的格式自然会有转义。如下特殊字符需要转义
+复杂的格式自然会有转义，如下特殊字符需要通过前加 `\` 转义。有些时候不加也可以
 
 ```md
 \ backslash
